@@ -29,13 +29,10 @@ html {
 
 body {
   font-family: "Manrope", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 button {
-  font-size: 1.6rem;
-  line-height: 3.2rem;
-  letter-spacing: -0.16px;
   padding: 1.2rem 2.4rem;
   color: var(--purple);
   background-color: var(--lightGreen);
@@ -45,6 +42,13 @@ button {
 button:hover {
   cursor: pointer;
   background-color: var(--purple);
+}
+
+a,
+button {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.16px;
 }
 
 h1,
@@ -79,9 +83,15 @@ p {
 
 /* Media Tablet */
 @media screen and (min-width: 768px) {
-  button {
+  body {
     font-size: 1.6rem;
+  }
+
+  a,
+  button {
+    font-size: 1.8rem;
     line-height: 3.2rem;
+    letter-spacing: -0.18px;
   }
 
   h1 {
@@ -103,8 +113,11 @@ p {
 /* Media Desktop */
 @media screen and (min-width: 1440px) {
   button {
-    font-size: 1.8rem;
     line-height: 3.2rem;
+  }
+
+  a {
+    font-size: 1.8rem;
     letter-spacing: -0.18px;
   }
 
