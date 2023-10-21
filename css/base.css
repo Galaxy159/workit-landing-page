@@ -1,3 +1,9 @@
+:root {
+  --lightGreen: #44ffa1;
+  --purple: #24053e;
+  --lightPurple: #584d62;
+}
+
 *,
 ::before,
 ::after {
@@ -22,12 +28,103 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
   font-family: "Manrope", sans-serif;
+  font-size: 1.8rem;
+}
+
+button {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.16px;
+  padding: 1.2rem 2.4rem;
+  color: var(--purple);
+  background-color: var(--lightGreen);
+  border: 1px solid var(--lightGreen);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--purple);
 }
 
 h1,
 h2,
 h3 {
   font-family: "Fraunces";
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 5rem;
+  color: white;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  color: white;
+}
+
+h3 {
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  color: var(--purple);
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: var(--lightPurple);
+}
+
+/* Media Tablet */
+@media screen and (min-width: 768px) {
+  button {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  h2 {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+}
+
+/* Media Desktop */
+@media screen and (min-width: 1440px) {
+  button {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.18px;
+  }
+
+  h1 {
+    font-size: 8rem;
+    line-height: 8rem;
+  }
+
+  h2 {
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+  }
+
+  h3 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+  }
 }
