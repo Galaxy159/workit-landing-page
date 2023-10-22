@@ -30,6 +30,9 @@ html {
 body {
   font-family: "Manrope", sans-serif;
   font-size: 1.6rem;
+  background-image: url("../assets/images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 center;
 }
 
 button {
@@ -37,7 +40,6 @@ button {
   color: var(--purple);
   background-color: var(--lightGreen);
   border: 2px solid var(--lightGreen);
-  transition: all 0.2s;
 }
 
 button:hover {
@@ -47,6 +49,7 @@ button:hover {
 
 a {
   font-weight: 700;
+  line-height: 32px;
 }
 
 a,
@@ -56,9 +59,11 @@ button {
   letter-spacing: -0.16px;
   text-decoration: none;
   outline: none;
+  transition: all 0.2s;
 }
 
-button:hover > a {
+button:hover > a,
+a:hover {
   color: var(--lightGreen);
 }
 
@@ -93,6 +98,12 @@ p {
   line-height: 2.8rem;
   font-weight: 400;
   color: var(--lightPurple);
+}
+
+.container {
+  max-width: 37.5rem;
+  margin: 0 auto;
+  position: relative;
 }
 
 /* Media Tablet */

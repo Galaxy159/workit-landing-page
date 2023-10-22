@@ -1,8 +1,23 @@
 .header {
-  .header__logo {
-  }
+  max-width: 34.3rem;
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: space-between;
+  margin: 3.2rem 1.6rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
 
   .header__btn {
-    letter-spacing: -0.16px;
+    .header__btn--link {
+      color: white;
+      border-bottom: 3px solid var(--lightGreen);
+      transition: all 0.2s;
+    }
+
+    .header__btn--link:hover {
+      color: var(--lightGreen);
+    }
   }
 }
