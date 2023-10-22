@@ -8,6 +8,7 @@
   left: 0;
   right: 0;
   text-align: center;
+  z-index: 1;
 
   .header__btn {
     .header__btn--link {

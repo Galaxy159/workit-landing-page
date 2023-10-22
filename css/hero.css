@@ -1,0 +1,36 @@
+.hero {
+  padding-top: 13rem;
+  max-width: 34.3rem;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+
+  .hero__headline {
+    margin-bottom: 4rem;
+  }
+  .hero__headline::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 16rem;
+    right: 6.1rem;
+    top: 18rem;
+    background-color: var(--lightGreen);
+  }
+
+  .hero__btn {
+    margin-bottom: 6.4rem;
+  }
+
+  .hero__btn--link {
+    color: var(--purple);
+  }
+
+  .hero__btn:hover > a {
+    color: var(--lightGreen);
+  }
+
+  .hero__img {
+    height: 17.8159rem;
+  }
+}
