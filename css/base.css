@@ -36,7 +36,8 @@ button {
   padding: 1.2rem 2.4rem;
   color: var(--purple);
   background-color: var(--lightGreen);
-  border: 1px solid var(--lightGreen);
+  border: 2px solid var(--lightGreen);
+  transition: all 0.2s;
 }
 
 button:hover {
@@ -44,11 +45,21 @@ button:hover {
   background-color: var(--purple);
 }
 
+a {
+  font-weight: 700;
+}
+
 a,
 button {
   font-size: 1.6rem;
   line-height: 3.2rem;
   letter-spacing: -0.16px;
+  text-decoration: none;
+  outline: none;
+}
+
+button:hover > a {
+  color: var(--lightGreen);
 }
 
 h1,
@@ -66,18 +77,21 @@ h1 {
 h2 {
   font-size: 3.2rem;
   line-height: 4.8rem;
+  font-weight: 600;
   color: white;
 }
 
 h3 {
   font-size: 2.8rem;
   line-height: 3.6rem;
+  font-weight: 600;
   color: var(--purple);
 }
 
 p {
   font-size: 1.6rem;
   line-height: 2.8rem;
+  font-weight: 400;
   color: var(--lightPurple);
 }
 
